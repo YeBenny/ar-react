@@ -2,6 +2,7 @@
   "name": "we-galaxy-ar",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@react-three/fiber": "^8.13.0",
     "@testing-library/jest-dom": "^5.16.5",
