@@ -4,7 +4,6 @@ import {
   ZapparCanvas,
 } from "@zappar/zappar-react-three-fiber";
 import { useLoader } from "@react-three/fiber";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader";
 import { useState } from "react";
 import { Container, Navbar } from "react-bootstrap";
@@ -15,9 +14,6 @@ function ImageTracking() {
 
   // Use Webpack to load in target file
   const targetFile = new URL("../../assets/webank.zpt", import.meta.url).href;
-
-  const gltfFile = new URL("../../models/duck.glb", import.meta.url).href;
-  const gltf = useLoader(GLTFLoader, gltfFile);
 
   const fbxFile = new URL("../../models/hoodie.fbx", import.meta.url).href;
   const fbx = useLoader(FBXLoader, fbxFile);
