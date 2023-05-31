@@ -28,6 +28,14 @@ function Home() {
         >
           <Card.Body>Face Tracking</Card.Body>
         </Card>
+        <Card
+          onClick={() => {
+            navigate("/instant-tracking");
+          }}
+          style={{ cursor: "pointer" }}
+        >
+          <Card.Body>Instant Tracking</Card.Body>
+        </Card>
       </ListGroup>
     </>
   );
